@@ -1,0 +1,81 @@
+\documentclass[a4paper,11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[hidelinks]{hyperref} % Hyperref package for url's and [hidelinks] option to remove collouring\
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{tikz}
+\usepackage{tabularx, makecell}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{float}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage{lineno}
+\linenumbers
+%\usepackage{showframe} %This line can be used to clearly show the new margins
+
+\newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+
+\usetikzlibrary{positioning,fit,calc,arrows.meta}
+\tikzstyle{myarrows}=[line width=1mm,-triangle 45,postaction={draw, line width=3mm, shorten >=4mm, -}]
+
+\title{The assessment of A on B under conditions C, D, and E}
+\author{Author and Supervisor}
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+
+\begin{abstract}
+A is important because things. 
+A has an impact on B in certain ways.
+We hypothesize that D and E influence this interaction with some outcomes based on supporting information. 
+The effect was tested on a tiny number of participants, manipulating A in conditions D and E, with control condition C.
+We found significant effects of D and E on B.
+This result is important because reasons.
+There are several caveats.
+Future work will include doing stuff.
+\end{abstract}
+\newpage
+\section{Introduction}
+Some background on A and B.
+The support for why D and E and interesting manipulations to try.
+\section{Methods}
+General information about the experiment.
+\subsection{Participants}
+Information about the participants
+\subsection{Experimental Stimuli}
+Information about the stimuli
+\subsection{Measurement}
+Information about the measurement procedure
+\subsection{Experimental Design and Procedure}
+Further details needed to replicate the experiment procedure/
+
+\section{Results}
+Details about how the data was analyzed, including which models and packages were included.
+\subsection{Correlation}
+How the data did or did not correlate
+\subsection{Linear Mixed-Effects Models}
+The statistical modeling that was performed.
+Testing the assumptions of the models to inform the reader if the models are valid.
+\section{Discussion}
+Summarize the core finding, and why this is important.
+\subsection{Limitations \& Further Research}
+What improvements could be made to this work, and what further work is required.
+\section{Conclusions}
+Summarize the work and the outcome.
+\section{Conflict of interest}
+The authors declare that they have no conflict of interests.
+\section{Data availability statement}
+Where the data and code is available.
+\section{Acknowledgments}
+Who paid for the work and who helped you out.
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{IEEEtran}
+\bibliography{ref}
+\end{document}

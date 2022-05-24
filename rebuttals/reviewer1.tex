@@ -1,0 +1,86 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[a4paper,11pt]{article}
+\usepackage{geometry}
+\usepackage{xcolor}
+\newgeometry{vmargin={15mm}, hmargin={12mm,17mm}}   % set the margins
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\usepackage{ulem}
+
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{}
+
+\begin{document}
+
+\hypertarget{title-with-no-spaces}{%
+\subsection{Title}\label{title-with-no-spaces}}
+
+Ref.: 
+
+Journal:
+
+Date: \today
+
+We would like to thank the reviewer for the time and effort committed to reviewing the article, it is greatly appreciated.
+We have performed several significant changes based on the feedback from all of the reviewers, and we would greatly appreciate any further reviews we receive.
+We have included line numbering in the modified version of the article to assist the review process.
+Please find below the rebuttals and discussion of the changes made to the article with respect to the review. 
+
+\hypertarget{general-1}{%
+\subsection{General:}\label{general-1}}
+
+\begin{quote}
+Criticism.
+\end{quote}
+
+Thank you for your criticism of blah. 
+We have addressed your comment in section A line 1234 of the paper.
+
+\bibliographystyle{IEEEtran}
+\bibliography{../ref}
+
+\end{document}
